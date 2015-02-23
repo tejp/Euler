@@ -1,4 +1,4 @@
-import timeit
+# import timeit
 
 
 def isPal(n):
@@ -23,4 +23,4 @@ def getPal(i=999, p=False):
     return highPal
 
 getPal(p=True)
-print(timeit.timeit(getPal, number=1000))
+# print(timeit.timeit(getPal, number=1000))
