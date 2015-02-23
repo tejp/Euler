@@ -1,6 +1,3 @@
-# import timeit
-
-
 def isPal(n):
     nbr = str(n)
     return nbr == nbr[::-1]
@@ -10,7 +7,9 @@ def getPal(i=999, p=False):
     highPal = -1
     lowFactor = int(i/10)
     while i > lowFactor:
-        for j in range(i, lowFactor, -1):
+        start = i if i % 11 == 0 else i-i % 11
+        increment = -1 if i % 11 == 0 else -11
+        for j in range(start, lowFactor, increment):
             n = i*j
             if not n > highPal:
                 break
@@ -23,4 +22,3 @@ def getPal(i=999, p=False):
     return highPal
 
 getPal(p=True)
-# print(timeit.timeit(getPal, number=1000))
