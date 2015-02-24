@@ -21,4 +21,4 @@ def getPal(i=999, p=False):
         i -= 1
     return highPal
 
-getPal(p=True)
+print(getPal())
