@@ -8,8 +8,8 @@ def getPal(i=999, p=False):
     lowFactor = int(i/10)
     while i > lowFactor:
         start = i if i % 11 == 0 else i-i % 11
-        increment = -1 if i % 11 == 0 else -11
-        for j in range(start, lowFactor, increment):
+        decrement = -1 if i % 11 == 0 else -11
+        for j in range(start, lowFactor, decrement):
             n = i*j
             if not n > highPal:
                 break
