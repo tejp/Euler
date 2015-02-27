@@ -1,7 +1,7 @@
 import math
 
 
-def addSpanNaturals(nbr=20):
+def spanOfNaturals(nbr=20):
     product = 1
     limit = nbr**0.5
     for i in range(2, nbr):
@@ -25,4 +25,4 @@ def isPrime(n):
             p += 2
     return True
 
-print(addSpanNaturals())
+print(spanOfNaturals())
